@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiwot Car Rental</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe8c5;
+        }
+        header {
+            background-image: url('image top.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 130px;
+            width: device-width;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #495057;
+        }
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ffa600;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b37a00;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label>Sex:</label>
+            <div>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your address"></textarea>
+            <label for="car">Select Car:</label>
+            <select id="car">
+                <option value="Toyota Land Cruiser FJ40">Toyota Land Cruiser FJ40</option>
+                <option value="Tesla Model X">Tesla Model X</option>
+                <option value="Mercedes-Benz W120/W121">Mercedes-Benz W120/W121</option>
+                <option value="Audi Q5 40 e-tron Sport EV">Audi Q5 40 e-tron Sport EV</option>
+                <option value="Classic 1965 Buick Wildcat">Classic 1965 Buick Wildcat</option>
+                <option value="Ford F150">Ford F150</option>
+                <option value="Jaguar 420">Jaguar 420</option>
+                <option value="Limousine">Limousine</option>
+                <option value="FJ Cruiser">FJ Cruiser</option>
+                <option value="Chevrolet Camaro 2019">Chevrolet Camaro 2019</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hiwot Car Rental</p>
+    </footer>
+</body>
+</html>
